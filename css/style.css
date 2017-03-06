@@ -49,10 +49,23 @@ p {
   .container {
     width: 96%;
   }
-  img {
+  /*img {
     width: 70%;}
-  header .one-half ul {
+    */
+   .one-half ul {
     float: left;
+    text-align: left;
+    padding: 0;
+    width: 30%;
+    margin: 0;
+    padding-left: 0;
+    font-size: 12px;
+  }
+  .site-logo img{
+    width: 20%;
+  }
+  .hero img {
+    width: 70%;
   }
 }
 
