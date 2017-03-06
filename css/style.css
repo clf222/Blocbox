@@ -22,16 +22,16 @@ p {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-righ: 15px;
+  padding-right: 15px;
   padding-left: 15px;
-  postion: relative;
+  position: relative;
 }
 .container:before, 
 .container:after {
   content: "";
   display: table;
 }
-.container: after {
+.container:after {
   clear: both;
 }
 .one-half, .one-third, .one-fourth {
@@ -42,10 +42,25 @@ p {
   margin: 0 2% 20px;
 }
 /* media queries */
+
+/*my breakpoint.  */
+
+@media (max-width: 767px){
+  .container {
+    width: 96%;
+  }
+  img {
+    width: 70%;}
+  header .one-half ul {
+    float: left;
+  }
+}
+
 @media (min-width: 768px){
   .container {
     width: 750px;
   }
+}
 
 @media (min-width: 992px){
     .container {
@@ -134,6 +149,6 @@ header .hero img {
   text-decoration: none; 
   padding: 10px 30px;
   background: #2ECC71;
-  border: 2ps solid #2ECC71;
+  border: 2px solid #2ECC71;
   box-shadow: 0px 2px 0px 0px #22894E;
 }
