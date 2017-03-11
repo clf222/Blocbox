@@ -41,54 +41,7 @@ p {
   min-height: 1px;
   margin: 0 2% 20px;
 }
-/* media queries */
 
-/*my breakpoint.  */
-
-@media (max-width:767px){
-  .container {
-    width: 96%;
-  }
- 
-  .site-logo img{
-    width: 25%;
-  }
-  .hero img {
-    width: 50%;
-  }
-  h1 {
-  font-size:24px;
-  font-weight: normal;
-  margin: 95px 0 0;
-  }
-}
-
-@media (min-width: 768px){
-  .container {
-    width: 750px;
-  }
-}
-
-@media (min-width: 992px){
-    .container {
-      width:970px;
-    }
-    .one-half {
-      width:46%;
-    }
-    .one-third {
-      width: 29.33333%;
-    }
-    .one-fourth {
-      width: 21%;
-    }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
 
 /* HEADER */
 
@@ -219,7 +172,7 @@ header .hero img {
   margin-top: 25px;
 }
 
-.box.middle {
+.box .middle {
   min-height: 485px;
   margin-top: 0px;
 }
@@ -378,21 +331,304 @@ footer .logo {
   display: block;
 }
 
+/* media queries*/
+
+/*my breakpoint.  */
+
+@media (max-width: 767px){
+  .container {
+   width:96%;
+  }
+  .one-half, .one-third, .one-fourth {
+  width: 50%;
+ 
+  position: relative;
+  min-height: 1px;
+  margin: 0 auto 10px;
+}
+ 
+
+.site-logo img {
+  max-width: 30%;
+  margin: 5px auto;
+}
+.one-half  ul {
+
+
+  text-align: center;
+  font-size: 12px;
+ 
+  margin: 0;
+}
+header nav ul > li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 15px;
+}
+ header nav ul > li.btn-outline {
+   padding:8px 12px;
+   border:1px solid #FFFFFF;
+   border-radius: 2px;
+ }
+ .hero img {
+      width: 60%;
+    }
+  header .hero h1 {
+    font-size:24px;
+    font-weight: normal;
+    margin: 30px 0 0;
+  }
+  header .hero p {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 100;
+    margin: 10px 0 40px;
+  }
+
+  /*-- pricing --*/
+  .pricing { 
+   padding: 1em 0;
+  }
+
+  .box {
+    min-height: 150px;
+    width: 80%;
+    margin:10px auto 0px;
+  }
+  .box ul li {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+  .box h4 {
+  font-size: 32px;
+  font-weight: normal;
+  margin: 10px 0 5px;
+}
+
+  /*--benefits --*/
+  .benefits h2 {
+    font-size: 24px;
+  }
+  .benefits i {
+    font-size: 32px;
+  }
+  .benefits ul {
+    padding: 1em 0;
+  }
+  .benefits ul li {
+    font-size: 14px;
+    line-height: 16px;
+  }
+/*.box .btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+}
+*/
+.btn {
+  border-radius: 2px;
+  font-weight: 400;
+  text-decoration: none; 
+  padding: 5px 10px;
+  border: 1px solid #2ECC71;
+  box-shadow: 0px 2px 0px 0px #22894E;
+}
+  /*--testimonials--*/
+  .testimonials blockquote {
+  color: #FFFFFF;
+  text-align: left;
+  font-style: normal;
+  
+  position: relative;
+  padding: 15px;
+  width: auto;
+  margin: 0;
+}
+.testimonials {
+  padding: 1em 0;
+  text-align: center;
+}
+
+  /*--footer--*/
+  footer p, footer nav ul {
+  padding: .5em 0 0 0;
+  text-align: center;
+  line-height: .875em;
+  margin: 0;
+ }
+  footer .logo {
+  padding: .5em 0;
+  margin: 0 auto;
+  display: block;
+ }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 750px;
+  }
+   .one-half {
+    width: 45%;
+  }
+  .one-half .site-logo{
+
+   margin: 0 auto 10px;
+   float:left;
+   
+  }
+
+.one-half  ul {
+  display: inline;
+
+  text-align: right;
+  float: right ;
+  margin: 0;
+}
+header nav ul > li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 15px;
+}
+ header nav ul > li.btn-outline {
+   padding:10px 13px;
+   border:2px solid #FFFFFF;
+   border-radius: 4px;
+ }
+ .hero img {
+      width: 65%;
+    }
+  header .hero h1 {
+    font-size:36px;
+    font-weight: normal;
+    margin: 30px 0 0;
+  }
+  header .hero p {
+    font-size: 26px;
+    line-height: 29px;
+    font-weight: 100;
+    margin: 10px 0 40px;
+  }
+  .pricing { 
+   padding: 1em 0;
+  }
+
+  .box {
+    min-height: 150px;
+    width: 80%;
+    margin:10px auto 0px;
+  }
+  .box ul li {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+  .box h4 {
+  font-size: 32px;
+  font-weight: normal;
+  margin: 10px 0 5px;
+}
+
+  /*--benefits --*/
+  .benefits h2 {
+    font-size: 24px;
+  }
+  .benefits i {
+    font-size: 36px;
+  }
+  .benefits ul {
+    padding: 1em 0;
+  }
+  /*--testimonials--*/
+  .testimonials blockquote {
+  color: #FFFFFF;
+  text-align: left;
+  font-style: normal;
+  
+  position: relative;
+  padding: 15px;
+  width: auto;
+  margin: 0;
+}
+.testimonials {
+  padding: 2em 0;
+  text-align: center;
+}
+
+  /*--footer--*/
+  footer p, footer nav ul {
+  padding: .5em 0;
+  text-align: center;
+  line-height: .875em;
+  margin: 0;
+ }
+  footer .logo {
+  padding: .5em 0;
+  margin: 0 auto;
+  display: block;
+ }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .container {
+      width:970px;
+    }
+    .one-half {
+      width:46%;
+    }
+    .one-third {
+      width: 29.33333%;
+    }
+    .one-fourth {
+      width: 21%;
+    }
+
+ 
+header .hero h1 {
+  font-size:40px;
+  font-weight: normal;
+  margin: 50px 0 0;
+}
+header .hero p {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 100;
+  margin: 10px 0 20px;
+}
+/* hero image */
+header .hero img {
+    width: 65%;
+  display: block;
+  margin: 3em auto 0;
+}
+ 
+  .btn {
+    margin: 10px 0;
+  }
+
+ 
+
 /* make footer responsive */
-@media (min-width: 992px){
-  footer {
+    footer {
     background-color: #3498DB;
     background-image: linear-gradient(to left, #3498DB 0%, #3498DB 33.33337%, #34495E 33.33337%, #34495E 100%);
     height: 100px;
   }
   footer p, footer nav ul {
-    padding: 2em 0;
+    padding: 3em 0 1em;
     text-align: left;
   }
   footer .right-footer-block {
     background-color: #3498DB;
   }
   footer .logo {
-    padding: 2em 0 2em 1.em;
+    padding: 2em 0 2em 1.5em;
   }
 }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+ 
