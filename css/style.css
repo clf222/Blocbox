@@ -414,6 +414,9 @@ footer .logo {
   font-weight: 400;
   margin: 0 0 0 10px;
 }
+.active {
+  background-color: #C390D4;
+}
 
 .left-nav .settings a {
   color: #FFFFFF;
