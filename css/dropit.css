@@ -47,6 +47,41 @@
     right: 10px;
     display: block; 
 }
+/*--styles trying to modify for assignment --*/
+/*--this one isn't working ---*/
+.settings .dropit .dropit-submenu {
+    position: absolute;
+    /*-top: 100%;-*/
+    right:0; /* dropdown left or right */
+    z-index: 1000;
+    display: none;
+    min-width: 100px;
+    list-style: none;
+    padding: 10px;
+    margin: 20px 0 0;
+}
+
+.settings .dropit .dropit-open .dropit-submenu {
+    display: block;
+    background: #FF0000;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
+    border-radius: 4px;
+    position: absolute;
+    top:-175px;
+}
+/*--this one seems to --*/
+.settings .dropit .dropit-open .dropit-submenu:after{ 
+    content: " ";
+    position: absolute;
+    border-style: solid;
+    border-width: 8px 8px 0;
+    border-color: #FFFFFF transparent;
+    width: 0;
+    z-index: 1;
+    bottom: 5px;
+    right: 10px;
+    display: block; 
+}
 
 .dropit .dropit-open .dropit-submenu li {
     display: block;
