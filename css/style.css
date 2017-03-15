@@ -448,6 +448,7 @@ footer .logo {
 }
 .active {
   background-color: #C390D4;
+  padding: 10px 5px;
 }
 
 .left-nav .settings a {
@@ -765,6 +766,7 @@ header nav ul > li {
     width: 80%;
     margin:10px auto 0px;
   }
+
  
   .box ul li {
   font-size: 18px;
@@ -846,6 +848,19 @@ header nav ul > li {
       width: 21%;
     }
 
+ .box {
+   padding:0 15px 15px;
+   background: #FFFFFF;
+   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+   min-height: 439px;
+   position: relative;
+   margin-top: 25px;
+ }
+ .box.middle {
+   min-height: 485px;
+   margin-top:0px;
+ }
+
     .left-nav {
       height: 100vh;
       width: 14.6666667%;
@@ -874,7 +889,7 @@ header .hero p {
   font-size: 28px;
   line-height: 36px;
   font-weight: 100;
-  margin: 10px 0 20px;
+  margin: 10px 0 40px;
 }
 /* hero image */
   header .hero img {

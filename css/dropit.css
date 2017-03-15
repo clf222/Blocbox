@@ -68,7 +68,7 @@
     border-radius: 4px;
     position: absolute;
     /* the trick */
-    top:-200px;
+    top: -150px;
 }
 /*--this one seems to --*/
 .settings .dropit .dropit-open .dropit-submenu:after{ 
@@ -80,7 +80,7 @@
     width: 0;
     z-index: 1;
     right: 10px;
-    top: 154px;
+    top: 116px;
     display: block; 
 }
 
@@ -99,5 +99,6 @@
     text-decoration: none;
     font-family: 'Lato', Helvetica, Arial, sans-serif; 
     font-weight: 100;
+    min-width: 140px;
 
 }
