@@ -9,4 +9,4 @@ This project encompasses all phases of design. The development included:
 4. Prototyping (Invision) 
 5. User research and preference test
 
-You can view the site at  https://clf222.github.io/Blocbox/
+You can view the project at  https://clf222.github.io/Blocbox/
