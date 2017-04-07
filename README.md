@@ -7,4 +7,6 @@ This project encompasses all phases of design. The development included:
 2. High-Fidelity markups (PhotoShop and Sketch)
 3. Logo and Style Guide (Illustrator and Sketch)
 4. Prototyping (Invision) 
-5. User research and preference tests
+5. User research and preference test
+
+You can view the site at  https://clf222.github.io/Blocbox/
