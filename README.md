@@ -10,4 +10,5 @@ This project encompasses all phases of design. The development included:
 3. Logo and Style Guide (Illustrator and Sketch)
 4. Prototyping (Invision)
 5. User research and preference test
-6. You can view the project at https://clf222.github.io/Blocbox/
+
+You can view the project at https://clf222.github.io/Blocbox/
